@@ -1,0 +1,65 @@
+# Django Core
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+django-filter==23.5
+django-simpleui==2025.6.24
+
+# JWT Auth
+djangorestframework-simplejwt==5.5.1
+PyJWT>=2.8.0
+
+# Database
+PyMySQL==1.1.0
+
+# API Documentation
+drf-spectacular==0.27.0
+
+# Utils
+python-dotenv==1.2.1
+python-decouple==3.8
+PyYAML==6.0.2
+requests==2.32.4
+httpx==0.28.1
+
+# Automation Testing (Core)
+playwright>=1.40.0
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# AI Integration
+browser-use==0.10.1
+langchain-openai==1.1.6
+openai==2.14.0
+
+# Task Queue
+celery==5.3.4
+redis==5.0.1
+
+# WebSocket
+daphne==4.2.1
+channels==4.3.2
+channels-redis==4.3.0
+
+# Test Reports
+allure-pytest==2.15.0
+allure-python-commons==2.15.0
+
+# Data Generation
+Faker==40.1.2
+fakerx==0.2.0
+
+# Other Dependencies
+python-dateutil==2.9.0.post0
+pytz==2025.2
+python-docx==1.2.0
+pypdf==6.5.0
+reportlab==4.2.0
+qrcode==8.2
+python-barcode==0.16.1
+cryptography==41.0.7
+pyotp==2.9.0
+email-validator==2.3.0
+pillow==12.1.0
+beautifulsoup4==4.14.3
+lxml==6.0.0
