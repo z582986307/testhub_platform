@@ -298,7 +298,7 @@ SPECTACULAR_SETTINGS = {
 }
 
 # Redis URL (used across celery, channels, and SMS verification)
-REDIS_URL = config('REDIS_URL', default='redis://:1234@127.0.0.1:6379/0')
+REDIS_URL = config('REDIS_URL', default='redis://127.0.0.1:6379/0')
 
 # Celery Configuration
 CELERY_BROKER_URL = REDIS_URL
