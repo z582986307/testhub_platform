@@ -57,6 +57,12 @@ def send_sms(phone_number, template_code, template_param, sign_name=None):
     if sign_name is None:
         sign_name = settings.SMS_SIGN_NAME
 
+    # 测试模式：如果没有配置AccessKey，直接返回成功
+    if not access_key_id or not access_key_secret:
+        code = template_param.get('code', '')
+        print(f"[TEST MODE] 模拟发送短信到 {phone_number}: 验证码 {code}")
+        return True, {'Code': 'OK', 'Message': '测试模式：短信发送成功'}
+
     params = {
         'AccessKeyId': access_key_id,
         'Action': 'SendSms',
