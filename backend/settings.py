@@ -235,6 +235,8 @@ if DEBUG:
         "http://127.0.0.1:3000",
         "http://localhost:8080",
         "http://127.0.0.1:8080",
+        "http://localhost:9090",
+        "http://127.0.0.1:9090",
     ]
     CORS_ALLOW_CREDENTIALS = True
     # 支持EventSource (SSE) 的额外CORS头部
@@ -279,6 +281,8 @@ else:
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:9090",
+    "http://127.0.0.1:9090",
 ]
 
 # Spectacular Settings
