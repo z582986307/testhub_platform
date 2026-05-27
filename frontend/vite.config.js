@@ -28,7 +28,7 @@ export default defineConfig({
     target: 'es2022',
   },
   server: {
-    port: 9090,
+    port: 9093,
     host: '0.0.0.0',
     headers: {
       'Cache-Control': 'no-cache, no-store, must-revalidate',
